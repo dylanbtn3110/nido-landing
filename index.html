@@ -17,7 +17,7 @@
   <div class="contenedor">
     <a class="marca" href="#inicio" aria-label="Nido, inicio"><img src="img/logo-isotipo.svg" alt=""><span>Nido</span></a>
     <nav class="nav-links" aria-label="Secciones">
-      <a href="#funciones">Funciones</a><a href="#como-funciona">Cómo funciona</a><a href="#roles">Para quién</a><a href="#contacto">Contacto</a>
+      <a href="#funciones">Funciones</a><a href="#ia">IA</a><a href="#como-funciona">Cómo funciona</a><a href="#roles">Para quién</a><a href="#modelo">Modelo</a><a href="#impacto">Impacto</a><a href="#contacto">Contacto</a>
     </nav>
     <div class="nav-acciones">
       <a class="btn btn-secundario" data-app href="#">Iniciar sesión</a>
@@ -88,6 +88,33 @@
     </div>
   </section>
 
+  <section class="bloque" id="ia" aria-labelledby="t-ia">
+    <div class="contenedor ia">
+      <div>
+        <span class="etiqueta">Inteligencia artificial</span>
+        <h2 id="t-ia">Una incidencia llega bien clasificada desde el primer minuto</h2>
+        <p class="lead">Mientras tu personal describe el problema, Nido sugiere la categoría y la prioridad. Una fuga de gas deja de ser «prioridad baja» por un error de tipeo.</p>
+        <ul class="checks vertical">
+          <li><svg class="ico" viewBox="0 0 24 24"><path d="m5 12 5 5L20 7"/></svg> Modelo propio (Naive Bayes) entrenado con incidencias reales</li>
+          <li><svg class="ico" viewBox="0 0 24 24"><path d="m5 12 5 5L20 7"/></svg> Muestra la confianza y las palabras que pesaron en la decisión</li>
+          <li><svg class="ico" viewBox="0 0 24 24"><path d="m5 12 5 5L20 7"/></svg> Mejora con el uso: se reentrena con tus incidencias</li>
+          <li><svg class="ico" viewBox="0 0 24 24"><path d="m5 12 5 5L20 7"/></svg> La IA solo sugiere: tú decides</li>
+        </ul>
+      </div>
+      <div class="ia-demo" role="img" aria-label="Ejemplo: la descripción «Huele a gas en la cocina» se clasifica como mantenimiento de prioridad crítica">
+        <div class="ia-entrada"><small>Descripción escrita por el personal</small><p>«Huele a gas en la cocina»</p></div>
+        <div class="ia-salida">
+          <small>Sugerencia de la IA</small>
+          <div class="ia-fila"><span>Categoría</span><strong>Mantenimiento</strong><em>88 %</em></div>
+          <div class="ia-barra"><i style="width:88%"></i></div>
+          <div class="ia-fila"><span>Prioridad</span><strong class="critica">Crítica</strong><em>99 %</em></div>
+          <div class="ia-barra"><i style="width:99%"></i></div>
+          <div class="ia-claves"><span>gas</span><span>gas cocina</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="bloque" id="como-funciona" style="background:var(--fondo)" aria-labelledby="t-como">
     <div class="contenedor">
       <div class="titulo-seccion"><span class="etiqueta">Cómo funciona</span><h2 id="t-como">De la reserva al reporte en cuatro pasos</h2></div>
@@ -121,6 +148,43 @@
         <div class="rol-texto"><h3>Reservas que no se cruzan</h3><p class="lead">Mientras eliges las fechas, Nido revisa el calendario del alojamiento y te avisa si ya están ocupadas.</p>
           <a class="btn btn-primario" href="#prueba" style="margin-top:20px">Quiero probarlo</a></div>
         <div class="rol-captura"><img src="img/app-reserva.jpg" alt="Formulario de reserva mostrando el aviso de fechas ocupadas" width="1280" height="800"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloque" id="modelo" style="background:var(--fondo)" aria-labelledby="t-modelo">
+    <div class="contenedor">
+      <div class="titulo-seccion"><span class="etiqueta">Modelo de negocio</span><h2 id="t-modelo">Cómo crea y captura valor Nido</h2>
+        <p class="lead">Un servicio de suscripción para quienes administran pocos alojamientos y hoy lo hacen con chats y hojas de cálculo.</p></div>
+      <div class="modelo">
+        <article class="tarjeta"><h3>Clientes</h3><p>Propietarios y administradores de alojamientos temporales (de 1 a 20 propiedades), y su personal de limpieza y mantenimiento.</p></article>
+        <article class="tarjeta"><h3>Propuesta de valor</h3><p>Reservas sin cruces, servicios con evidencia, incidencias con seguimiento e ingresos claros, en una sola herramienta.</p></article>
+        <article class="tarjeta"><h3>Canales</h3><p>Esta página, redes sociales, prueba gratuita y alianzas con comunidades de anfitriones.</p></article>
+        <article class="tarjeta"><h3>Ingresos</h3><p>Suscripción mensual según la cantidad de alojamientos; la prueba gratuita convierte a los propietarios del piloto.</p></article>
+        <article class="tarjeta"><h3>Recursos y costos</h3><p>Nube (servidor y base de datos), desarrollo del producto y soporte a los propietarios.</p></article>
+        <article class="tarjeta"><h3>Relación con el cliente</h3><p>Acompañamiento en la puesta en marcha y mejoras guiadas por las incidencias y los reportes reales.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloque impacto" id="impacto" aria-labelledby="t-impacto">
+    <div class="contenedor">
+      <div class="titulo-seccion"><span class="etiqueta">Impacto</span><h2 id="t-impacto">Orden en la operación, menos desperdicio</h2>
+        <p class="lead">Nido contribuye a dos Objetivos de Desarrollo Sostenible de las Naciones Unidas.</p></div>
+      <div class="ods">
+        <article class="ods-tarjeta ods8"><span class="ods-num">8</span>
+          <div><h3>Trabajo decente y crecimiento económico</h3>
+          <p>Formaliza y profesionaliza a los pequeños operadores: tareas asignadas, horarios y evidencias claras para el personal, e ingresos medidos para tomar mejores decisiones.</p></div></article>
+        <article class="ods-tarjeta ods12"><span class="ods-num">12</span>
+          <div><h3>Producción y consumo responsables</h3>
+          <p>Checklists, comprobantes y reportes digitales en lugar de papel; menos reposiciones y viajes innecesarios al saber qué falta y qué ya se hizo.</p></div></article>
+      </div>
+      <h3 class="subtitulo-ambiental">Beneficio ambiental</h3>
+      <div class="grid-4">
+        <article class="tarjeta"><h3>Menos papel</h3><p>Checklist, evidencias y comprobantes viven en la plataforma.</p></article>
+        <article class="tarjeta"><h3>Menos traslados</h3><p>Los servicios se asignan una sola vez, con horario y estado visibles.</p></article>
+        <article class="tarjeta"><h3>Menos desperdicio</h3><p>La evidencia muestra los insumos que faltan, y se repone solo lo necesario.</p></article>
+        <article class="tarjeta"><h3>Mantenimiento a tiempo</h3><p>Las incidencias críticas se atienden antes: menos fugas de agua y de gas.</p></article>
       </div>
     </div>
   </section>
